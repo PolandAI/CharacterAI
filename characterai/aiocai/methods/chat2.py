@@ -446,7 +446,7 @@ class WSConnect(ChatV2):
         try:
             self.ws = await websockets.connect(
                 'wss://neo.character.ai/ws/',
-                extra_headers={
+                    additional_headers={
                     'Cookie': cookie
                 }
             )
